@@ -15,4 +15,23 @@ body {
   margin: 0 auto;
   margin-top: 20rem;
   border: 0.35rem solid #ffa500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#display {
+  flex: 1;
+}
+#keyPad {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+.drum-pad {
+  height: 4.5rem;
+  width: 5rem;
+  background-color: #808080;
+  box-shadow: black 3px 3px 5px;
 }
