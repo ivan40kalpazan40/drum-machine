@@ -1,10 +1,10 @@
 export const drumPads = ['q', 'w', 'e', 'a', 's', 'd', 'z', 'x', 'c'];
 
-const audioLinks = {
+export const audioLinks = {
   q: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3',
   w: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3',
   e: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3',
-  a: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-4.mp3',
+  a: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3',
   s: 'https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3',
   d: 'https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3',
   z: 'https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3',
