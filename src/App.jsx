@@ -26,3 +26,7 @@ function App() {
 }
 
 export default App;
+
+// TODO: on-of switch in control pad
+// TODO: volume slider in control pad
+// TODO: pad switcher in control pad
