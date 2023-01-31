@@ -1,15 +1,14 @@
 import { useRef } from 'react';
-import { audioLinks } from '../utils/utils';
-const DrumPad = ({ pad, index }) => {
+const DrumPad = ({ pad, link, index }) => {
   const audioFile = useRef(null);
-  const src = audioLinks[pad.toLowerCase()];
+
   return (
     <button
       className="drum-pad"
       id={index}
       onClick={() => audioFile.current.play()}
     >
-      <audio className="clip" id={pad} src={src} ref={audioFile}></audio>
+      <audio className="clip" id={pad} src={link} ref={audioFile}></audio>
       {pad}
     </button>
   );
