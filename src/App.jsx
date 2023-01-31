@@ -3,17 +3,15 @@ import { useDispatch } from 'react-redux';
 import './App.css';
 import KeyPad from './components/Keypad';
 import ControlPad from './components/ControlPad';
-import { pressKey, clearKeyState } from './slices/padSlice';
+import { setName } from './slices/padSlice';
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     const handleKeyDown = (e) => {
-      console.log(e.keyCode);
-      dispatch(pressKey(e.keyCode));
-      setTimeout(() => {
-        dispatch(clearKeyState(e.keyCode));
-      }, 3000);
+      const btn = document.getElementById(e.key.toUpperCase());
+      btn && btn.play();
+      dispatch(setName(e.keyCode));
     };
 
     window.addEventListener('keydown', handleKeyDown);
